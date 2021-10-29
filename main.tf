@@ -58,7 +58,7 @@ resource "aws_route53_record" "lb" {
 ### IAM Policies ###
 ####################
 module "instance_profile" {
-  source       = "github.com/traveloka/terraform-aws-iam-role//modules/instance?ref=v1.0.2"
+  source       = "github.com/traveloka/terraform-aws-iam-role/modules/instance?ref=v1.0.2"
   service_name = "${local.service_name}"
   cluster_role = "${local.app_cluster_role}"
 
